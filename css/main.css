@@ -1,0 +1,68 @@
+/*patrones generales (Estilo de diseño simple)*/
+*{
+    --Primario--:rgb(68, 0, 255);
+    --CPrimario--:#fff;
+    --Secundario--:rgba(135, 134, 134, 1);
+    --Ligero--:rgba(217, 217, 217, 1);
+    --Contraste--:rgba(177, 177, 177, 1);
+    --Intenso--:#000;
+
+    font-family: arial;
+
+    margin:0;
+    padding: 0;
+
+}
+
+h1{
+    font-size: 6vw;
+}
+h2{
+    font-size: 5vw;
+}
+h3{
+    font-size: 4vw;
+}
+h4{
+    font-size: 3vw;
+}
+h5{
+    font-size: 2vw;
+}
+h6{
+    font-size: 1vw;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+/*campos de encabezado*/
+header{
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--Primario--);
+    color: var(--CPrimario--);
+
+    display: flex;
+    align-items: stretch;
+}
+
+.imagen{
+    width: 50vw;
+    background-image: url(../img/Computadora.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+/* Estilos de encabezado */
+@media screen and (max-width: 920px) {
+    body{
+        display: none;
+    }
+}
